@@ -1,0 +1,28 @@
+---
+---
+
+$primary-color: green;
+$secondary-color: blue;
+$dropdownmenu-background: orange;
+
+@import 'foundation';
+@include foundation-everything;
+
+main {
+  @include grid-row;
+  article {
+    header, div:first { 
+      @include grid-column(12);
+    }
+  }
+  padding : {
+    left: 20px;
+    right: 20px;
+  }
+}
+
+footer {
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
